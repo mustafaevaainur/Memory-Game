@@ -3,11 +3,22 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/script.js"></script>
     <title>Memory Game</title>
 </head>
 <body>
 <img class="end_img" src="https://image.ibb.co/jLpGuR/Group_2.png" alt="Group_2">
-	<a class="end">Поздравляем! <br> Ваш итоговый счет: 594</a>
-	<form><input type="button"  class="again_button" value="Еще раз"></input></form>
+
+    <div class="end">
+        <a id="end_message">Поздравляем!</a> <br>
+        <a id="end_score">Ваш итоговый счет: </a>
+    </div>
+	<form>
+        <div data-tid="EndGame-retryGame">
+            <input type="button"  id="again_button" class="start_gameb" data-tid="EndGame-retryGame" value="Еще раз">
+            </input>
+        </div>
+    </form>
+
 </body>
 </html>

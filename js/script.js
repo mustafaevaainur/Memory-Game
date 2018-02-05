@@ -315,3 +315,18 @@ var cards = [
     }
 ];
 
+var Memory = {
+    init: function (cards) {
+    this.$game = $(".game_page");
+    this.$restart = $("button.again");
+    this.$start = $(".start_gameb");
+    this.$cardsArray = $.merge(cards, cards);
+    this.$shuffleCards(this.cardsArray);
+    this.setup();
+        
+    },
+
+    shuffleCards: function(cardsArray){
+        this.$cards = $(this.shuffle(this.cardsArray));
+    },
+}

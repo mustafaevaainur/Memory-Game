@@ -3,12 +3,17 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/script.js"></script>
     <title>Memory Game</title>
 </head>
-<body data-tid="Deck">
- <form><div><button class="again" data-tid="Menu-newGame"><a class="textstag">Начать заново</a></button>
- <a class="textoch">Очки: n</a> </div>
+<body data-tid="Deck" class="game_page">
+ <form><div><button class="again" data-tid="Menu-newGame"><a class="textstag">Начать заново</a></button></div>
+ <div data-tid="Menu-scores"><a class="textoch">Очки: n</a> </div>
+     <div class="inner" data-tid="Card">
+         <div class="right"><a href="#settings"><img data-tid="Card-flipped" id="memory--settings-icon" src="https://image.ibb.co/imWuac/backcard.jpg" /></a></div>
+     </div>
+
  </form>
- 
+
 </body>
 </html>
